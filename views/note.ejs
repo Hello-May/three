@@ -1,0 +1,28 @@
+<%- contentFor('body') %>
+
+    <!-- <script src="/js/main.js"></script> -->
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <!-- <div class="container mx-2 my-2 py-5">
+                    <button type="button" id="btn" class="btn btn-primary">Test</button> -->
+                <h1 class="text-center">Ref</h1>
+                <dl class="row">
+                    <% for ( const note of notes ) { %>
+                        <dt class="col-2">
+                            <%= note.category %>
+                                </dd>
+                        <dd class="col-9">
+                            <dl class="row">
+                                <dt class="col-10">
+                                    <%= note.title %>
+                                </dt>
+                                <dd class="col-2"><a href="<%= note.uri %>">🔗</a>
+                                </dd>
+                            </dl>
+                            </dt>
+                            <% } %>
+                </dl>
+            </div>
+        </div>
+    </main>

@@ -1,0 +1,32 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container py-2">
+            <a class="navbar-brand mb-0 h1" href="/">
+                <img src="https://cdn-icons-png.flaticon.com/512/375/375061.png" width="30" height="30" alt="">
+                【 MAY HOUSE 】
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <% for ( const i in menu ) { %>
+                        <li class="nav-item"></li>
+                        <% if ( menu[i].url==url ) { %>
+                            <a class="nav-link active" href="<%= menu[i].url %>">
+                                <%= menu[i].name %>
+                            </a>
+                            <% } else { %>
+                                <a class="nav-link" href="<%= menu[i].url %>">
+                                    <%= menu[i].name %>
+                                </a>
+                                <% } %>
+                                    </li>
+                                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

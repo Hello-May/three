@@ -1,0 +1,34 @@
+<%- contentFor('body') %>
+
+    <main role="main">
+        <section class="text-center">
+            <div class="container py-5">
+                <img src="http://n.sinaimg.cn/sinakd20210506ac/569/w350h219/20210506/cb02-kpuunna8586739.gif"
+                    height="300px">
+                <h1>Practice</h1>
+                <p class="lead text-muted">Ejs (express-ejs-layouts)、Three.js</p>
+            </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <% for ( let i=1; i<10;i++ ) { %>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img src="/img/view<%= i %>.jpeg" height="300px">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro neque soluta
+                                        ullam,
+                                        rerum deserunt in possimus similique quam, dicta alias eligendi dolores quas
+                                        beatae
+                                        animi odio tempora quae. Porro, non!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+    </main>
